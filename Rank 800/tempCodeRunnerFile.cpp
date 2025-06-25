@@ -2,87 +2,47 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+
+
+
+int main ()
 {
-    int t;
-    cin >> t;
+    int t ;
+    cin >> t ;
     while (t--)
     {
-        int k, a, b, x, y;
-        cin >> k >> a >> b >> x >> y;
-        int counter = 0;
-
-        if (x < y)
+        int n ;
+        cin >> n;
+        int a[n];
+        for (int i = 0; i < n; i++)
         {
-            counter++;
-            while (k -= x)
-            {
-                if (k < a)
-                {
-                    break;
-                }
-                counter++;
-            }
-            if (k >= b)
-            {
-                counter++;
-                while (k -= y)
-                {
-                    if (k < b)
-                    {
-                        break;
-                    }
-                    counter++;
-                }
-            }
-            cout << counter << endl;
+            cin >> a[i];
         }
-        else if (y < x)
+        if(n==2 && a[0] == a[1])
         {
-            counter++;
-            while (k -= y)
-            {
-                if (k < b)
-                {
-                    break;
-                }
-                counter++;
-            }
-            if (k >= a)
-            {
-                counter++;
-                while (k -= x)
-                {
-                    if (k < a)
-                    {
-                        break;
-                    }
-                    counter++;
-                }
-            }
-            cout << counter << endl;
+            cout << "YES" << endl;
         }
-
         else
         {
-            int z = min(a, b);
-            if (k < a && k < b)
+            bool flag = false;
+            for (int i = 0; i < n -1; i++)
             {
-                cout << 0 << endl;
+                if(a[i] == 0 && a[i+1]==0)
+                {
+                    flag = true;
+                }
+            }
+            if(flag)
+            {
+                cout << "YES" << endl;
             }
             else
             {
-                while (true)
-                {
-                    counter++;
-                    k -= a;
-                    if (k < z)
-                    {
-                        break;
-                    }
-                }
-                cout << counter << endl;
+              cout << "NO" << endl;
             }
+
+            
         }
     }
+    
 }
