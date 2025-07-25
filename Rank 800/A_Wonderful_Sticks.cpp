@@ -73,11 +73,11 @@ Copy
 Output
 Copy
 
-2 1 
-4 3 2 5 1 
-1 2 
-2 1 3 
-3 4 2 5 6 7 1 
+2 1
+4 3 2 5 1
+1 2
+2 1 3
+3 4 2 5 6 7 1
 
 Note
 
@@ -128,12 +128,11 @@ int main()
         // really  not easy to solve this problem
         // but the solution is simple
 
-        
         int lift = 1;
-        int right  = n;
+        int right = n;
         vector<int> a(n);
-        for (int i = n - 2; i >= 0; i--)   // decrease i by two which we
-        // we have two number first one and last number 
+        for (int i = n - 2; i >= 0; i--) // decrease i by two which we
+        // we have two number first one and last number
         {
             if (s[i] == '<')
             {
@@ -142,8 +141,8 @@ int main()
             }
             if (s[i] == '>')
             {
-                a[i + 1] = right ;
-                right --;
+                a[i + 1] = right;
+                right--;
             }
         }
         a[0] = lift;
