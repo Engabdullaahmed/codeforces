@@ -116,9 +116,9 @@ int main()
         int x;
         cin >> x;
         string s;
-        int counter_ = 0;
-        int counter_dash = 0;
-        for (int i = 0; i < x; i++)
+        long long  counter_ = 0;
+        long long  counter_dash = 0;
+        for (long long i = 0; i < x; i++)
         {
             char c;
             cin >> c;
@@ -136,7 +136,7 @@ int main()
         }
         else
         {
-            int ans = 0;
+            long long ans = 0;
             ans = counter_dash / 2 * (counter_dash - counter_dash / 2) * counter_;
 
             cout << ans << endl;
