@@ -1,0 +1,7 @@
+equation of reminder 
+x - (x/y)*y
+
+if we need reminder 
+250 - 25 = 04 
+x%y
+z/y
