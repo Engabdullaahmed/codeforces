@@ -20,3 +20,8 @@ direction array
 di[] = {1,0,-1,0}
 dj[] = {0,1,0,-1} 
 we can arrange as we need 
+
+concrete 
+abstract 
+
+1 based - zero based = one base  
