@@ -77,7 +77,7 @@ In the second sample, it is impossible to obtain 12
 
 through the described actions.
 
-*/
+    */
 
 int main()
 {
