@@ -16,12 +16,27 @@ int 4 bytes = 8bits
 1000000 * 4 * 8 if i have o(n) 
 
 
-direction array 
-di[] = {1,0,-1,0}
-dj[] = {0,1,0,-1} 
-we can arrange as we need 
-
 concrete 
 abstract 
 
 1 based - zero based = one base  
+
+
+ZERO BASED INDEX  d must 
+direction array  Von Neumann neighborhood
+di[d] = {1,0,-1,0}
+dj[d] = {0,1,0,-1} 
+we can arrange as we need  idea move up down 
+
+mountain array  Moore neighborhood
+d, r,u,l,ul,dr,ur,dl
+di[d] = {1,0,-1,0,-1,1,-1,1}
+dj[d] = {0,1,0,-1,-1,1,1,-1 }	 
+
+idea moving and switch and algorithm 
+n = i + di* num steps if there and we can say mod
+that's idea moving in random direction not follow role  
+ 
+
+
+
