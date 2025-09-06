@@ -36,7 +36,64 @@ dj[d] = {0,1,0,-1,-1,1,1,-1 }
 idea moving and switch and algorithm 
 n = i + di* num steps if there and we can say mod
 that's idea moving in random direction not follow role  
- 
+
+
+
+
+different parity 
+one even 
+one odd
+
+
+
+
+parity → زي ما قلنا: الزوجية/الفردية (even/odd).
+
+contiguous → معناها عناصر ورا بعض من غير ما نفصل، زي subarray متصلة.
+
+subarray or substring → جزء من المصفوفة، ولازم يكون متصل.
+
+subsequence → جزء من المصفوفة لكن مش لازم يبقوا متصلين، بس بالترتيب.
+
+prefix → البداية لحد نقطة معينة (زي أول k عنصر).
+
+suffix → النهاية من نقطة معينة لحد الآخر (زي من i لحد آخر عنصر).
+
+invariant → حاجة تفضل ثابتة طول ما الخوارزمية شغالة.
+
+greedy → أسلوب بنختار فيه الحل الأنسب في اللحظة الحالية (بدون تفكير طويل للبعد).
+
+brute force → الحل الغبي 😁، نجرب كل الاحتمالات لحد ما نلاقي الحل.
+
+prune / pruning → قطع فروع مالهاش لازمة عشان نقلل التعقيد (بنستعملها مع backtracking).
+
+sliding window → تقنيّة نمشي بيها window (شباك) على array لحل مسائل subarray.
+
+two pointers → نستعمل مؤشرَين (indices) يتحركوا في اتجاهات معينة لحل أسرع.
+
+modulo → باقي القسمة (زي x % m).
+
+
+
+
+flatten from 2d to 1d
+index = i*col + j 
+column 
+i , j nested loop 
+
+3d to 2d 
+
+(i*col + j) % c = j
+(i*col + j) / c = i
+
+
+
+
+a*b % b = 0
+% remove مضاعفات شىء 
+
+a%b = a 
+if a<b  
 
 
 
