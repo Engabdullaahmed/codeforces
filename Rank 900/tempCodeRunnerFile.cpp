@@ -1,5 +1,2 @@
-nt m = n - k + 1;
-            // int counter = ceil(double(m) / k);
-            // int counter2 = 1;
-            // int counter3 = 0;
-            // int x = n;
+        // like abc
+        if (freq[max_char - 'a'] == freq[min_char2 - 'a']
