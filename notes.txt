@@ -115,6 +115,16 @@ if a<b
 
 
 
+permutation ------------->
+Single zero → use the sum trick. n*n+1 / 2 
+
+Multiple zeros → use a presence check (hashing / boolean array / set). 
+and if i need sort reverse array or counter the different or number of operation 
+count first change and last change and after l-r+1
+and make sese if i have only one number 
+that's very tricky 
+
+___________________________
 
 هو parity (فردي/زوجي) للتكرارات.
 
