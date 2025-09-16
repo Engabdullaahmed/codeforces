@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 /*B. Maximum Cost Permutation
+https://codeforces.com/contest/2144/problem/B
 time limit per test
 2 seconds
 memory limit per test
