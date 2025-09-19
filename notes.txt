@@ -130,3 +130,13 @@ ___________________________
 
 
 
+
+3. إزاى تدرب نفسك على التفكير ده؟
+
+ذاكر تحليل الأعداد الأولية (Prime factorization) كويس جدًا.
+
+ذاكر نظرية الأعداد (Number Theory basics): القواسم، المضاعفات، gcd, lcm.
+
+حل مسائل على Codeforces / Atcoder فى قسم Math / Number theory
+
+
