@@ -1,43 +1,147 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
+#define ll long long
+
+string Employee[100];
+int age[100];
+int salary[100];
+string male_female[100];
+int curr = 0;
+void Add_new()
+{
+    cout << "Enter name:" << endl;
+    string s;
+    cin >> s;
+    cout << "Enter age:" << endl;
+    int w;
+    cin >> w;
+    cout << "Enter Salary" << endl;
+    int se;
+    cin >> se;
+    cout << "Enter gender (m/f):" << endl;
+    char c;
+    cin >> c;
+    Employee[curr] = s;
+    age[curr] = w;
+    salary[curr] = se;
+    male_female[curr] = c;
+    curr++;
+}
+void print_Employee()
+{
+    for (int i = 0; i < curr; i++)
+    {
+        cout << Employee[i] << " " << age[i] << " " << salary[i] << " " << male_female[i] << " ";
+        cout << endl;
+    }
+}
+void delete_age()
+{
+    cout << "Enter start and end age";
+    int start, end;
+    cin >> start >> end;
+    for (int i = 0; i < curr;)
+    {
+        if (age[i] >= start && age[i] <= end)
+        {
+
+            for (int j = i; j < curr - 1; j++)
+            {
+                Employee[j] = Employee[j + 1];
+                age[j] = age[j + 1];
+                salary[j] = salary[j + 1];
+                male_female[j] = male_female[j + 1];
+            }
+            curr--;
+        }
+        else
+        {
+            i++;
+        }
+    }
+    cout << "success we delete it " << endl;
+}
+
+void update_salary_name()
+{
+    string name;
+    int salaryy;
+
+    cout << "enter name and salary";
+    cin >> name >> salaryy;
+    bool flage = true;
+    for (int i = 0; i < curr; i++)
+    {
+        if (name == Employee[i])
+        {
+            salary[i] = salaryy;
+            flage = true;
+            break;
+        }
+        else
+        {
+            flage = false;
+        }
+    }
+    if (flage == false)
+    {
+        cout << "NO emple fount " << endl;
+    }
+    else
+    {
+        cout << "upeate succes :)" << endl;
+    }
+}
 
 int main()
 {
 
-    int t;
-    cin >> t;
-    while (t--)
+    while (true)
     {
-        int n;
-        cin >> n;
-        vector<ll> a(n);
-        for (int i = 0; i < n; ++i)
-            cin >> a[i];
-        sort(a.begin(), a.end());
 
-        ll ans = 0;
-        if (n % 2 == 0)
+        cout << "Enter your choice:" << endl;
+        cout << "1) Add new employee" << endl;
+        cout << "2)print all employees" << endl;
+        cout << "3)Delete by age" << endl;
+        cout << "4)Update Salary by name" << endl;
+        int x;
+        cin >> x;
+
+        if (x >= 1 && x <= 4)
         {
-            for (int i = 1; i < n; i += 2)
-                ans += a[i];
+            if (x == 1)
+            {
+                Add_new();
+            }
+            else if (x == 2)
+            {
+                print_Employee();
+            }
+            else if (x == 3)
+            {
+                delete_age();
+            }
+            else
+            {
+                update_salary_name();
+            }
         }
         else
         {
-
-            ll ans_1 = 0;
-            for (int i = 1; i < n - 1; i += 2)
-                ans_1 += a[i];
-            ans_1 += a[n - 1];
-
-            ll ans_2 = 0;
-            for (int i = 0; i < n; i += 2)
-                ans_2 += a[i];
-
-            ans = min(ans_1, ans_2);
+            cout << "You Enter in valide number please enter number between 1 to 4 " << endl;
         }
-
-        cout << ans << '\n';
+        cout << "if you want exit please enter -1 :( if not enter any another number ";
+        int m;
+        cin >> m;
+        if (m == -1)
+        {
+            break;
+        }
+        else
+        {
+            continue;
+        }
     }
+
     return 0;
 }

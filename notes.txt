@@ -3,6 +3,8 @@
 
 
 
+
+
 equation of reminder 
 x - (x/y)*y
 
@@ -34,7 +36,7 @@ dj[d] = {0,1,0,-1}
 we can arrange as we need  idea move up down 
 
 mountain array  Moore neighborhood
-d, r,u,l,ul,dr,ur,dl
+d, r,u,l,d,ul,dr,ur,dl
 di[d] = {1,0,-1,0,-1,1,-1,1}
 dj[d] = {0,1,0,-1,-1,1,1,-1 }	 
 
@@ -104,7 +106,7 @@ i , j nested loop
 (i*col + j) / c = i
 
 
-
+	
 
 a*b % b = 0
 % remove مضاعفات شىء 
@@ -139,4 +141,24 @@ ___________________________
 
 حل مسائل على Codeforces / Atcoder فى قسم Math / Number theory
 
+_____________
+
+if there is loop 2^  
+make it from 0 to 31 
+
+ long long sum = (1LL << k) - 1;  power at cpp 
+
+ولو مثلا عايز اثبن طرفين متساوين 
+اعمل بسط باقى قسمته على باقه و اتاكد انه ب صفر 
+
+_________________________
+ n, n-1, n-2, ..., 3, 2, 1, n, 1, 2, 3, ..., n-2, n-1 ]
+construction if i need to place 
+There is a construction where each number x is placed at distance either x or 2⋅x.
+
+
+
+
+
+sliding window --------------------------
 
