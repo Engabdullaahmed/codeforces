@@ -162,3 +162,11 @@ There is a construction where each number x is placed at distance either x or 2â
 
 sliding window --------------------------
 
+function pass by refernce and value 
+50 min 
+const == > const 
+! const ==       const - !const 
+
+
+
+
