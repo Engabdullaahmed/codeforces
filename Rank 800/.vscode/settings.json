@@ -2,14 +2,12 @@
   "files.associations": {
     "*.dbclient-js": "javascript",
     "iostream": "cpp",
-    "bitset": "cpp",
-    "algorithm": "cpp",
-    "ostream": "cpp",
     "any": "cpp",
     "array": "cpp",
     "atomic": "cpp",
     "barrier": "cpp",
     "bit": "cpp",
+    "bitset": "cpp",
     "cctype": "cpp",
     "cfenv": "cpp",
     "charconv": "cpp",
@@ -46,6 +44,7 @@
     "vector": "cpp",
     "exception": "cpp",
     "expected": "cpp",
+    "algorithm": "cpp",
     "functional": "cpp",
     "iterator": "cpp",
     "memory": "cpp",
@@ -72,6 +71,7 @@
     "mutex": "cpp",
     "new": "cpp",
     "numbers": "cpp",
+    "ostream": "cpp",
     "ranges": "cpp",
     "scoped_allocator": "cpp",
     "semaphore": "cpp",
@@ -89,5 +89,6 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

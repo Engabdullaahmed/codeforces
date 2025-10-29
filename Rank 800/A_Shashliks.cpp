@@ -98,6 +98,8 @@ int main()
             }
         }
 
+     
+        
         k = temp;
 
         if (k >= b)
