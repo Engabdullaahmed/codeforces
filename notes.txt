@@ -28,11 +28,13 @@ concrete
 abstract 
 
 1 based - zero based = one base  
+1 based - 1 based = 0 based 
 
 
 ZERO BASED INDEX  d must 
 direction array  Von Neumann neighborhood
-di[d] = {1,0,-1,0}
+	up right down left 
+di[d] = {-1,0,1,0}
 dj[d] = {0,1,0,-1} 
 we can arrange as we need  idea move up down 
 
@@ -44,7 +46,7 @@ dj[d] = {0,1,0,-1,-1,1,1,-1 }
 idea moving and switch and algorithm 
 n = i + di* num steps if there and we can say mod
 that's idea moving in random direction not follow role  
-
+we use when we move at array 
 
 
 
@@ -121,6 +123,27 @@ i , j nested loop
 (i*col + j) % c = j
 (i*col + j) / c = i
 
+3d to 1d
+
+number of dimension 
+
+A b c D 
+number I انا مشيت 
+w z y x 
+
+to cound from 4d to 1d 
+
+that like index= 
+x + y*D + z *(c*d) + w*(b*c*d)
+
+__________
+if i have small string and big string and search small at big 
+
+at index of big string  
+x + i 
+x is like len of small string 
+
+
 
 	
 
@@ -129,6 +152,13 @@ a*b % b = 0
 
 a%b = a 
 if a<b  
+
+but if i make operation and a in negative 
+i will add on it b ex 
+3%5 = 3 
+-2 or 3 or 8 all of that mod 5 is 3 
+if have negavtive just 
+add -2 + 5 = 3 
 
 
 
@@ -189,6 +219,9 @@ after 1 2 3 4 5
 and not forget that print with make operation before funtion and make operation after method
 most power full ex is starts 
 
+
+if i move rite make at function (arr+1)
+if left just arr[len-1] each time 
 __________________________________________________
 shift right 
 for(int  i = length-1;i>=0;i--){
@@ -362,5 +395,42 @@ using namespace std;
         long long sum = prefix[x2][y2] - prefix[x1-1][y2] - prefix[x2][y1-1] + prefix[x1-1][y1-1];
         cout << sum << "\n";
     }
+}
+___________________________________
+sliding window 
+fixed 
+which count each k elemnnt
+and push at array 
+or we have sub array and each sub make operation on it 
+
+i+j 
+at index 
+
+
+dynamic 
+
+
+freq array 
+if number is negatve can shift number 
+like range -500 
+can shift -500+200 or what ever i need
+can check visited number or not
+ 
+ 
+use when we need to sort number 
+or check how many time repeated number occurrence 
+________________________________________________
+accumulation array 
+arr[i]+= arr[i-1]
+
+when we count from pref 
+AND WHEN deal with array 
+start with k element if we have sliding window on it 
+for(int  i = k;i<=n;i++)
+{
+sum = arr[i] - arr[i-k]
+sum of next widnodw 
+we give the sum which  the range subtract from pre start 
+
 }
 
